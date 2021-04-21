@@ -12,17 +12,29 @@
 
 ## Providers
 
-No providers.
+| Name | Version |
+|------|---------|
+| <a name="provider_aws"></a> [aws](#provider\_aws) | 3.37.0 |
+| <a name="provider_random"></a> [random](#provider\_random) | 3.1.0 |
 
 ## Modules
 
 | Name | Source | Version |
 |------|--------|---------|
+| <a name="module_eks"></a> [eks](#module\_eks) | terraform-aws-modules/eks/aws |  |
 | <a name="module_vpc"></a> [vpc](#module\_vpc) | terraform-aws-modules/vpc/aws | 2.78.0 |
 
 ## Resources
 
-No resources.
+| Name | Type |
+|------|------|
+| [aws_security_group.all_worker_mgmt](https://registry.terraform.io/providers/hashicorp/aws/3.37.0/docs/resources/security_group) | resource |
+| [aws_security_group.worker_group_mgmt_one](https://registry.terraform.io/providers/hashicorp/aws/3.37.0/docs/resources/security_group) | resource |
+| [aws_security_group.worker_group_mgmt_two](https://registry.terraform.io/providers/hashicorp/aws/3.37.0/docs/resources/security_group) | resource |
+| [random_string.suffix](https://registry.terraform.io/providers/hashicorp/random/3.1.0/docs/resources/string) | resource |
+| [aws_availability_zones.available](https://registry.terraform.io/providers/hashicorp/aws/3.37.0/docs/data-sources/availability_zones) | data source |
+| [aws_eks_cluster.cluster](https://registry.terraform.io/providers/hashicorp/aws/3.37.0/docs/data-sources/eks_cluster) | data source |
+| [aws_eks_cluster_auth.cluster](https://registry.terraform.io/providers/hashicorp/aws/3.37.0/docs/data-sources/eks_cluster_auth) | data source |
 
 ## Inputs
 
